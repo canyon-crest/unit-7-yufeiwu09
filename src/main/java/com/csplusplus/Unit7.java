@@ -108,8 +108,9 @@ public class Unit7 {
     	while(i>0) {
     		int rand = (int)(Math.random()*list.size());
     		int temp = list.get(rand);
-    		list.set(rand, list.get(list.size()-1-rand));
-    		list.set(list.size()-1-rand, temp);
+    		int rand2 = (int)(Math.random()*list.size());
+    		list.set(rand, list.get(rand2));
+    		list.set(rand2, temp);
     		i--;
     	}
     }
